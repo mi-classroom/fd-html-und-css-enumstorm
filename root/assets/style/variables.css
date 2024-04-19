@@ -20,4 +20,7 @@
     --size-xl: 24px;
     --size-xxl: 32px;
     --size-xxxl: 40px;
+
+    --size-quat: calc(var(--size-m) / 4);
+    --size-half: calc(var(--size-m) / 2);
 }
