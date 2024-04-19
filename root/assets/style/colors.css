@@ -1,0 +1,11 @@
+:root {
+    /* TH Koeln Primaer Farbklima */
+    --color-th-koeln-rot: hsl(5, 86%, 42%);
+    --color-th-koeln-orange: hsl(23, 100%, 46%);
+    --color-th-koeln-violett: hsl(315, 58%, 45%);
+    --color-th-koeln-schwarz: hsl(0, 0%, 0%);
+    --color-th-koeln-weiss: hsl(255, 100%, 100%);
+
+    /* Other Colors */
+    --color-background: hsl(0, 0%, 91%);
+}
