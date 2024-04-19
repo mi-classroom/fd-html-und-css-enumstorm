@@ -1,0 +1,23 @@
+:root {
+    --icons: material-icons;
+    
+    --font-weight-light: 300;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 700;
+
+    --line-height-tight: 100%;
+    --line-height-normal: 130%;
+    --line-height-loose: 150%;
+
+    --base-font-size: calc(1rem * 0.08);
+    --size-xxxs: 5px;
+    --size-xxs: 8px;
+    --size-xs: 10px;
+    --size-s: 12px;
+    --size-m: 16px;
+    --size-l: 20px;
+    --size-xl: 24px;
+    --size-xxl: 32px;
+    --size-xxxl: 40px;
+}
