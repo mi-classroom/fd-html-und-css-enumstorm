@@ -3,11 +3,19 @@
     <head>
         <meta charset="UTF-8">
         <title>ProjectSurvival4All – Survival-Tipps für die Projektarbeit</title>
-        <!--<link rel="stylesheet" type="text/css" href="/style/style.css">-->
+
+        <link rel="stylesheet" type="text/css" href="/assets/style/reset.css">
+        <link rel="stylesheet" type="text/css" href="/assets/style/icons.css">
+        <link rel="stylesheet" type="text/css" href="/assets/style/fonts.css">
+        <link rel="stylesheet" type="text/css" href="/assets/style/colors.css">
+        <link rel="stylesheet" type="text/css" href="/assets/style/variables.css">
+        <link rel="stylesheet" type="text/css" href="/assets/style/base.css">
+        <link rel="stylesheet" type="text/css" href="/assets/style/components.css">
+        <link rel="stylesheet" type="text/css" href="/assets/style/utils.css">
     </head>
     <body>
-        <header class="page-header">
-            <h1 title="Startseite"><a href="index.html"><img src="/images/ProjectSurvival4All-Icon.svg" alt="Startseite"></a></h1>
+        <header class="page-header is-hidden">
+            <h1 title="Startseite"><a href="index.html"><img src="/assets/images/ProjectSurvival4All-Icon.svg" alt="Startseite"></a></h1>
             <nav>
                 <div>
                     <form>
@@ -37,44 +45,44 @@
             </nav>
         </header>
         <main class="page-main">
-            <dialog open class="project-presentation-dialog">
+            <dialog open class="project-presentation-dialog is-hidden">
                 <form method="dialog"><button>X</button></form>
                 <h2>Willkommen!</h2>
                 <p>In der Bearbeitung von Projekten ist es von entscheidener Bedeutung, nicht nur theoretisches Wissen zu besitzen, sondern auch praxiserprobte Methoden, bewährte Tricks und den souveränen Umgang mit möglichen Stolpersteinen zu beherrschen. Hier setzt ProjectSurvival4All an, eine innovative Plattform in Zusammenarbeit mit der TH Köln, die entwickelt wurde, um dich und dein Team bei Projektarbeiten und im Studium optimal zu unterstützen. Hier erwarten dich erstklassige Inhalte von erfahrenen Dozenten, die dir Best Practices und kuratiertes Wissen auf eine interessante und effiziente Weise vermitteln. Schau einfach mal vorbei und entdecke, wie ProjectSurvival4All deine Projekterfahrung auf das nächste Level heben kann.</p>
                 <a href="/pages/about/about-the-project.html">Alle Infos über das Projekt</a>
             </dialog>
-            <section>
+            <section class="favorites-section">
                 <h2>Favoriten</h2>
-                <ul>
-                    <li>
+                <ul class="favorites-list">
+                    <li class="favorites-list-item">
                         <a href="">
                             <span class="TODO">ICON</span>
                             <h3>Wie baue ich eine Präsentation auf?</h3>
                             <address>Monika Engelen</address>
                         </a>
                     </li>
-                    <li>
+                    <li class="favorites-list-item">
                         <a href="">
                             <span class="TODO">ICON</span>
                             <h3>Wie erstelle ich eine Agenda?</h3>
                             <address>Raphaela Groten</address>
                         </a>
                     </li>
-                    <li>
+                    <li class="favorites-list-item is-hidden">
                         <a href="">
                             <span class="TODO">ICON</span>
                             <h3>Wie priorisiere ich (einen Backlog)?</h3>
                             <address>Raphaela Groten</address>
                         </a>
                     </li>
-                    <li>
+                    <li class="favorites-list-item is-hidden">
                         <a href="">
                             <span class="TODO">ICON</span>
                             <h3>Wie halte ich einen Pitch?</h3>
                             <address>Monika Engelen</address>
                         </a>
                     </li>
-                    <li>
+                    <li class="favorites-list-item is-hidden">
                         <a href="">
                             <span class="TODO">ICON</span>
                             <h3>Wie baue ich eine Präsentation auf?</h3>
@@ -83,7 +91,7 @@
                     </li>
                 </ul>
             </section>
-            <section>
+            <section class="is-hidden">
                 <h2>Von deinem ILU Schreibtisch</h2>
                 <ul>
                     <li>
@@ -130,7 +138,7 @@
                     </li>
                 </ul>
             </section>
-            <section>
+            <section class="is-hidden">
                 <h2>Verlauf</h2>
                 <ul>
                     <li>
@@ -223,7 +231,7 @@
                 </ul>
             </section>
         </main>
-        <footer class="page-footer">
+        <footer class="page-footer is-hidden">
             <nav>
                 <div>
                     <h2>Barrierefreiheit</h2>
