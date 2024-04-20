@@ -1,0 +1,86 @@
+.project-presentation-dialog {
+    background-color: var(--color-th-koeln-orange);
+    color: var(--color-th-koeln-weiss);
+    padding: var(--size-l);
+    
+
+    h2 {
+        font-size: var(--size-xl);
+    }
+
+    p {
+        font-size: var(--size-m);
+    }
+
+
+    form {
+        display: none;
+        background-color: black;
+    }
+
+    button {
+        background-color: purple;
+    }
+
+    button:hover {
+        background-color: green;
+    }
+}
+
+
+.favorites-section {
+    border: 3px solid #ffff00;
+    h2 {
+        margin-bottom: var(--size-l);
+    }
+}
+
+.favorites-list {
+    background-color: #000000;
+}
+
+.favorites-list-item {
+    background-color: var(--color-th-koeln-weiss);
+    border: 3px solid red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* .page-main {
+    background-color: var(--color-background);
+}
+
+.page-header {
+    background-color: var(--color-th-koeln-weiss);
+    display: none;
+}
+
+body {
+    background-color: #555555;
+}
+
+.project-presentation-dialog {
+    display: none;
+}
+
+
+.page-footer {
+    display: none;
+}
+
+.favorites-list-item {
+
+
+    address {
+        font-size: var(--size-s);
+    }
+}*/
