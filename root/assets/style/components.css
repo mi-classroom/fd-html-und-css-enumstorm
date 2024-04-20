@@ -1,4 +1,6 @@
 .project-presentation-dialog {
+    position: relative;
+
     background-color: var(--color-th-koeln-orange);
     color: var(--color-th-koeln-weiss);
     padding: var(--size-l);
@@ -13,25 +15,31 @@
     }
 
 
-    form {
-        display: none;
-        background-color: black;
-    }
-
     button {
-        background-color: purple;
+        background-color: transparent;
+
+        color: var(--color-th-koeln-weiss);
+        font-size: var(--size-l);
+        font-weight: var(--font-weight-bold);
+
+        border-style: none;
+        cursor: pointer;
+
+        float: right;
     }
 
     button:hover {
-        background-color: green;
+        background-color: var(--color-orange-light);
     }
 }
 
 
 .favorites-section {
-    border: 3px solid #ffff00;
+    padding: var(--size-xl);
+
     h2 {
         margin-bottom: var(--size-l);
+        font-size: var(--size-xl);
     }
 }
 
