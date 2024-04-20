@@ -29,6 +29,7 @@
 }
 
 
+
 .project-presentation-dialog {
     position: relative;
 
@@ -76,16 +77,21 @@
         margin-bottom: var(--size-xl);
         
         font-size: var(--size-l);
-        font-weight: var(--font-weight-bold);
+        font-weight: var(--font-weight-semi-bold);
     }
 
-    h3 {
-        font-size: var(--size-m);
+    h3, .link-tile-title {
+        font-size: var(--size-l);
+        font-weight: var(--font-weight-regular);
+    }
+
+    address {
+        font-size: var(--size-s);
         font-weight: var(--font-weight-regular);
     }
 }
 
-.link-tile-list-item {
+.link-tile-list > li {
     background-color: var(--color-th-koeln-weiss);
 
     margin-bottom: var(--size-m);
