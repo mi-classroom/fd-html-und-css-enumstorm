@@ -1,35 +1,6 @@
-.page-header {
-    background-color: var(--color-th-koeln-weiss);
-}
-
 .link-tile-list > li {
     margin-bottom: var(--size-m);
     background-color: var(--color-th-koeln-weiss);
-}
-
-.page-main-navigation-list {
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: stretch;
-    justify-content: center;
-    padding: 0;
-    font-size: var(--size-l);
-    font-weight: var(--font-weight-light);
-}
-
-.page-main-navigation-list > li {
-    flex-grow: 1;
-    padding: var(--size-xs) 0;
-    text-align: center;
-}
-
-.page-main-navigation-list > li:not(.selected):hover {
-    background-color: var(--color-background-light);
-}
-
-.page-main-navigation-list > .selected {
-    background-color: var(--color-background);
-    font-weight: var(--font-weight-medium);
 }
 
 
