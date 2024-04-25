@@ -2,6 +2,46 @@
     background-color: var(--color-th-koeln-weiss);
 }
 
+.page-header-top-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: var(--size-m) var(--size-xl);
+    padding-top: var(--size-xl);
+
+    h1 {
+        * {
+            display: block;
+        }
+    }
+}
+
+.burger-menu-button {
+    display: none;
+    outline: none;
+    border: none;
+    background-color: inherit;
+
+    align-self: stretch;
+    margin: 0;
+    padding: 0;
+
+
+    &:hover {
+        background-color: var(--color-light-grey);
+    }
+
+    span {
+        display: block;
+        font-weight: var(--font-weight-bold);
+        font-size: var(--size-xl);
+    }
+}
+
+
 .page-main-navigation-list {
     display: flex;
     flex-flow: row nowrap;
@@ -19,10 +59,21 @@
 }
 
 .page-main-navigation-list > li:not(.selected):hover {
-    background-color: var(--color-background-light);
+    background-color: var(--color-hover-element);
 }
 
 .page-main-navigation-list > .selected {
     background-color: var(--color-background);
     font-weight: var(--font-weight-medium);
+}
+
+
+@media only screen and (orientation: portrait) {
+    header .page-search {
+        display: none;
+    }
+
+    .burger-menu-button {
+        display: block;
+    }
 }
