@@ -8,6 +8,10 @@
 
     /* Other Colors */
     --color-background: hsl(0deg 0% 91%);
-    --color-background-light: hsl(0deg 0% 96%);
+    --color-hover-element: hsl(0deg 0% 96%);
     --color-orange-light: hsl(23deg 100% 60%);
+    --color-light-grey: hsl(0deg 0% 80%);
+    --color-grey: hsl(0deg 0% 50%);
+    --color-dark-grey: hsl(0deg 0% 20%);
+    --color-selected-element-outline: hsl(0deg 0% 60%);
 }
