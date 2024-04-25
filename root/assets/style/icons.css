@@ -1,5 +1,5 @@
 @font-face {
-    font-family: "material-icons";
+    font-family: material-icons;
     src: url("/assets/icons/material-design-icons-4.0.0/font/MaterialIconsOutlined-Regular.otf") format("opentype");
   }
 
@@ -43,22 +43,22 @@
     word-wrap: normal;
   }
   
-  .icon--s {
+  .icon-s {
     font-size: var(--size-s);
     line-height: var(--size-s);
   }
   
-  .icon--m {
+  .icon-m {
     font-size: var(--size-m);
     line-height: var(--size-m);
   }
   
-  .icon--l {
+  .icon-l {
     font-size: var(--size-l);
     line-height: var(--size-l);
   }
   
-  .icon--xl {
+  .icon-xl {
     font-size: var(--size-xl);
     line-height: var(--size-xl);
   }
@@ -66,7 +66,7 @@
   .icon.md-dark { color: var(--lightest); }
   .icon.md-light { color: var(--darkest); }
   
-  .icon--inline {
+  .icon-inline {
     margin-right: var(--size-xs);
     font-size: var(--size-m);
   }
@@ -75,4 +75,4 @@
     content: attr(data-icon);
   }
   
-  .icon--video::before { content: "smart_display"; }
+  .icon-video::before { content: "smart_display"; }

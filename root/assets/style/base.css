@@ -1,8 +1,8 @@
 html, body {
     background-color: var(--color-background);
-    font-family: source-sans-3, Arial, Sans-Serif;
-    font-weight: var(--font-weight-regular);
+    font-family: "source-sans-3", Arial, sans-serif;
     font-size: var(--size-m);
+    font-weight: var(--font-weight-regular);
 }
 
 dialog {
