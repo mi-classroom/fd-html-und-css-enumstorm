@@ -1,27 +1,25 @@
 :root {
     --icons: material-icons;
-    
     --font-weight-light: 300;
     --font-weight-regular: 400;
     --font-weight-medium: 500;
     --font-weight-semi-bold: 600;
     --font-weight-bold: 700;
-
     --line-height-tight: 100%;
     --line-height-normal: 130%;
     --line-height-loose: 150%;
 
-    --base-font-size: calc(1rem * 0.08);
-    --size-xxxs: 5px;
-    --size-xxs: 8px;
-    --size-xs: 10px;
-    --size-s: 12px;
-    --size-m: 16px;
-    --size-l: 20px;
-    --size-xl: 24px;
-    --size-xxl: 32px;
-    --size-xxxl: 40px;
-
+    /* Sizes */
+    --base-font-size: 1rem;
+    --size-xxxs: calc(var(--base-font-size) * 0.31);
+    --size-xxs: calc(var(--base-font-size) * 0.5);
+    --size-xs: calc(var(--base-font-size) * 0.63);
+    --size-s: calc(var(--base-font-size) * 0.75);
+    --size-m: var(--base-font-size);
+    --size-l: calc(var(--base-font-size) * 1.25);
+    --size-xl: calc(var(--base-font-size) * 1.5);
+    --size-xxl: calc(var(--base-font-size) * 2);
+    --size-xxxl: calc(var(--base-font-size) * 2.5);
     --size-quat: calc(var(--size-m) / 4);
     --size-half: calc(var(--size-m) / 2);
 }
