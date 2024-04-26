@@ -1,6 +1,14 @@
 .link-tile-list > li {
     margin-bottom: var(--size-m);
     background-color: var(--color-th-koeln-weiss);
+
+    a {
+        display: block;
+    }
+
+    .icon {
+        
+    }
 }
 
 
@@ -56,5 +64,12 @@
     address {
         font-size: var(--size-s);
         font-weight: var(--font-weight-regular);
+    }
+}
+
+
+@media only screen and (orientation: portrait) {    
+    main .page-search {
+        display: flex;
     }
 }
