@@ -7,6 +7,7 @@ html, body {
     font-family: "source-sans-3", Arial, sans-serif;
     font-size: var(--size-m);
     font-weight: var(--font-weight-regular);
+    min-width: 22rem;
 }
 
 dialog {
