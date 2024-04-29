@@ -5,8 +5,13 @@
     flex-grow: 2;
     padding: 0;
     background-color: var(--color-background);
+    transition: outline 0.1s ease-out;
 
     &:focus, &:focus-visible, &:focus-within {
+        outline: var(--color-selected-element-outline) solid var(--size-selected-element-outline-width);
+    }
+
+    &:hover {
         outline: var(--color-selected-element-outline) solid var(--size-selected-element-outline-width);
     }
 
@@ -35,10 +40,15 @@
         margin: 0;
         background-color: var(--color-th-koeln-orange);
         color: var(--color-th-koeln-weiss);
+        transition: background-color 0.25s ease-out;
 
-        &:hover {
-            background-color: var(--color-orange-light);
+        &:hover, &:focus, &:focus-visible {
+            background-color: var(--color-button-orange-hover);
             cursor: pointer;
+        }
+
+        &:active {
+            background-color: var(--color-button-orange-active);
         }
     }
 }
@@ -58,6 +68,10 @@ main .page-search {
 
         &:hover {
             background-color: var(--color-hover-element);
+        }
+
+        &:active {
+            background-color: var(--color-active-element);
         }
     }
 }
