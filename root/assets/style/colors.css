@@ -6,12 +6,18 @@
     --color-th-koeln-schwarz: hsl(0deg 0% 0%);
     --color-th-koeln-weiss: hsl(255deg 100% 100%);
 
+    /* Use oriented */
+    --color-hover-element: hsl(0deg 0% 95%);
+    --color-active-element: hsl(0deg 0% 90%);
+    --color-selected-element-outline: hsl(0deg 0% 60%);
+    --color-footer-background: hsl(0deg 0% 42%);
+    --color-button-orange-hover: hsl(23deg 100% 60%);
+    --color-button-orange-active: hsl(23deg 100% 65%);
+
     /* Other Colors */
     --color-background: hsl(0deg 0% 91%);
-    --color-hover-element: hsl(0deg 0% 96%);
     --color-orange-light: hsl(23deg 100% 60%);
     --color-light-grey: hsl(0deg 0% 80%);
     --color-grey: hsl(0deg 0% 50%);
     --color-dark-grey: hsl(0deg 0% 20%);
-    --color-selected-element-outline: hsl(0deg 0% 60%);
 }
