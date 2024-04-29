@@ -9,7 +9,7 @@
     align-items: center;
     padding: var(--size-xl) var(--size-xl);
     padding-top: var(--size-xl);
-    gap: var(--size-xl);
+    gap: var(--size-xxxl);
 
     > * {
         max-width: var(--size-max-search-bar-size);
