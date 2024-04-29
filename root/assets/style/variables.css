@@ -22,7 +22,20 @@
     --size-xxxl: calc(var(--base-font-size) * 2.5);
     --size-quat: calc(var(--size-m) / 4);
     --size-half: calc(var(--size-m) / 2);
+    --size-third-screen-width: 33vw;
+    --size-half-screen-width: 50vw;
+    --size-two-third-screen-width: 66vw;
+    
+    /* Layer */
+    --layer-content: 0;
+    --layer-navigation: 10;
+    --layer-sidebar: 20;
 
     /* Other */
     --size-selected-element-outline-width: 2px;
+    --size-max-search-bar-size: 40rem;
+
+    /* Break Point */
+    --breakpoint-mobile-tablet: 30rem;
+    --breakpoint-tablet-desktop: 45rem;
 }
