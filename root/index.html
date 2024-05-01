@@ -11,8 +11,9 @@
         <link rel="stylesheet" type="text/css" href="/assets/style/variables.css">
         <link rel="stylesheet" type="text/css" href="/assets/style/base.css">
         <link rel="stylesheet" type="text/css" href="/assets/style/utils.css">
-        <link rel="stylesheet" type="text/css" href="/assets/style/search.css">
         <link rel="stylesheet" type="text/css" href="/assets/style/header.css">
+        <link rel="stylesheet" type="text/css" href="/assets/style/footer.css">
+        <link rel="stylesheet" type="text/css" href="/assets/style/search.css">
 
         <!--<link rel="stylesheet" type="text/css" href="/assets/style/main.css">-->
 
@@ -21,228 +22,247 @@
     <body>
         <header class="page-header">
             <div class="page-header-top-row">
-                <h1 title="Startseite"><a href="index.html"><img src="/assets/images/ProjectSurvival4All-Icon.svg" alt="Startseite"></a></h1>
+                <h1 title="Startseite" class="page-header-main-logo"><a href="index.html"><img src="/assets/images/ProjectSurvival4All-Icon.svg" alt="Startseite"></a></h1>
                 <form class="page-search">
                     <input type="search" placeholder="Suche">
                     <button type="submit"><span class="icon icon-l">search</span></button>
                 </form>
-                <nav class="is-hidden">
-                    <ul class="">
+                <nav class="page-main-navigation" data-js-page-main-navigation>
+                    <ul>
                         <li><a href="">News</a></li>
                         <li><a href="">Barrierefreiheit</a></li>
                         <li>
-                            <img src="/images/language-flags/de.jpg" alt="Deutschland Fahne">
                             <select>
                                 <option selected="">DE</option>
                                 <option>EN</option>
                             </select>
                         </li>
-                        <li><a href=""><span class="TODO">User ICON</span></a></li>
+                        <li><a href="">Login</a></li>
                     </ul>
                 </nav>
-                <button class="burger-menu-button"><span class="icon">menu</span></button>
+                <button class="burger-menu-button has-icon" data-js-main-menu-open-button></button>
             </div>
-            <nav class="page-main-navigation">
-                <ul class="page-main-navigation-list">
-                    <li class="selected"><a href="">Mein Bereich</a></li>
-                    <li><a href="">Suche</a></li>
-                    <li><a href="">Aktuelles</a></li>
+            <nav class="page-tab-navigation">
+                <ul class="page-tab-navigation-list" data-tab-navigation-navigation-bar data-tab-navigation-id="main">
+                    <li data-navigation-bar-tab-name="section-main"><a>Mein Bereich</a></li>
+                    <li data-navigation-bar-tab-name="section-suche"><a>Suche</a></li>
+                    <li data-navigation-bar-tab-name="section-aktuelles"><a>Aktuelles</a></li>
                 </ul>
             </nav>
         </header>
-        <main class="page-main">
-            <form class="page-search">
-                <input type="search" placeholder="Suche">
-                <button type="submit"><span class="icon icon-l">search</span></button>
-            </form>
-            <dialog open class="project-presentation-dialog">
-                <form method="dialog"><button>x</button></form>
-                <h2>Willkommen!</h2>
-                <p>In der Bearbeitung von Projekten ist es von entscheidener Bedeutung, nicht nur theoretisches Wissen zu besitzen, sondern auch praxiserprobte Methoden, bewährte Tricks und den souveränen Umgang mit möglichen Stolpersteinen zu beherrschen. Hier setzt ProjectSurvival4All an, eine innovative Plattform in Zusammenarbeit mit der TH Köln, die entwickelt wurde, um dich und dein Team bei Projektarbeiten und im Studium optimal zu unterstützen. Hier erwarten dich erstklassige Inhalte von erfahrenen Dozenten, die dir Best Practices und kuratiertes Wissen auf eine interessante und effiziente Weise vermitteln. Schau einfach mal vorbei und entdecke, wie ProjectSurvival4All deine Projekterfahrung auf das nächste Level heben kann.</p>
-                <a href="/pages/about/about-the-project.html">Alle Infos über das Projekt</a>
-            </dialog>
-            <section class="favorites-section link-tile-section is-hidden">
-                <h2>Favoriten</h2>
-                <ul class="favorites-list link-tile-list">
-                    <li class="is-bordered">
-                        <a href="">
-                            <span class="icon">description</span>
-                            <h3>Wie baue ich eine Präsentation auf?</h3>
-                            <address>Monika Engelen</address>
-                        </a>
-                    </li>
-                    <li class="">
-                        <a href="">
-                            <span class="icon">tv</span>
-                            <h3>Wie erstelle ich eine Agenda?</h3>
-                            <address>Raphaela Groten</address>
-                        </a>
-                    </li>
-                    <li class="">
-                        <a href="">
-                            <span class="icon">tv</span>
-                            <h3>Wie priorisiere ich (einen Backlog)?</h3>
-                            <address>Raphaela Groten</address>
-                        </a>
-                    </li>
-                    <li class="">
-                        <a href="">
-                            <span class="icon">description</span>
-                            <h3>Wie halte ich einen Pitch?</h3>
-                            <address>Monika Engelen</address>
-                        </a>
-                    </li>
-                    <li class="">
-                        <a href="">
-                            <span class="icon">tv</span>
-                            <h3>Wie baue ich eine Präsentation auf?</h3>
-                            <address>Monika Engelen</address>
-                        </a>
-                    </li>
-                </ul>
-            </section>
-            <section class="ilu-folders-section link-tile-section">
-                <h2>Von deinem ILU Schreibtisch</h2>
-                <ul class="link-tile-list">
-                    <li class="is-bordered">
-                        <a href="">
-                            <span class="icon">folder</span>
-                            <span class="link-tile-title">Datenbanken 1</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <span class="icon">folder</span>
-                            <span class="link-tile-title">Kommunikationstechnik und Netze</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <span class="icon">folder</span>
-                            <span class="link-tile-title">Paradigmen der Programmierung</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <span class="icon">folder</span>
-                            <span class="link-tile-title">Audiovisuelles Medienprojekt</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <span class="icon">folder</span>
-                            <span class="link-tile-title">Grundlagen des Web</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <span class="icon">folder</span>
-                            <span class="link-tile-title">Screendesign</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <span class="icon">folder</span>
-                            <span class="link-tile-title">Datenbanken 1</span>
-                        </a>
-                    </li>
-                </ul>
-            </section>
-            <section class="is-hidden">
-                <h2>Verlauf</h2>
-                <ul>
-                    <li>
-                        <a href="">
-                            <img src="/images/rednerin-praesentation.jpg" alt="Professorin Monika Engelen hält einen Vortrag vor Publikum">
-                            <h3>Wie halte ich einen Pitch?</h3>
-                            <address>Monika Engelen</address>
-                            <ul>
-                                <li>Pitch</li>
-                                <li>Startup</li>
-                                <li>Überzeugen</li>
-                                <li>Visualisieren</li>
-                                <li>Vortrag</li>
-                                <li>Projektidee</li>
-                            </ul>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <img class="TODO" src="/assets/images/placeholder.png" alt="Placeholder Image">
-                            <h3>Wie halte ich einen Pitch? 2</h3>
-                            <address>Monika Engelen</address>
-                            <ul>
-                                <li>Pitch</li>
-                                <li>Startup</li>
-                                <li>Überzeugen</li>
-                                <li>Visualisieren</li>
-                                <li>Vortrag</li>
-                                <li>Projektidee</li>
-                            </ul>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <img src="/images/th-koln-header.jpg" alt="Das TH Köln Logo ist auf einem Schild zu sehen, im Hintergrund geht eine Studierende auf dem Campus Gelände">
-                            <h3>Wie arbeite ich im Team?</h3>
-                            <address>Monika Engelen</address>
-                            <ul>
-                                <li>Pitch</li>
-                                <li>Startup</li>
-                                <li>Überzeugen</li>
-                                <li>Visualisieren</li>
-                                <li>Vortrag</li>
-                            </ul>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <img class="TODO" src="/assets/images/placeholder.png" alt="Placeholder Image">
-                            <h3>Wie arbeite ich im Team?</h3>
-                            <address>Monika Engelen</address>
-                            <ul>
-                                <li>Pitch</li>
-                                <li>Startup</li>
-                                <li>Überzeugen</li>
-                                <li>Visualisieren</li>
-                                <li>Vortrag</li>
-                            </ul>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <img src="/images/th-koln-header.jpg" alt="Das TH Köln Logo ist auf einem Schild zu sehen, im Hintergrund geht eine Studierende auf dem Campus Gelände">
-                            <h3>Wie arbeite ich im Team?</h3>
-                            <address>Monika Engelen</address>
-                            <ul>
-                                <li>Pitch</li>
-                                <li>Startup</li>
-                                <li>Überzeugen</li>
-                                <li>Visualisieren</li>
-                                <li>Vortrag</li>
-                            </ul>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <img src="/images/rednerin-praesentation.jpg" alt="Professorin Monika Engelen hält einen Vortrag vor Publikum">
-                            <h3>Wie halte ich einen Pitch?</h3>
-                            <address>Monika Engelen</address>
-                            <ul>
-                                <li>Pitch</li>
-                                <li>Startup</li>
-                                <li>Überzeugen</li>
-                                <li>Visualisieren</li>
-                                <li>Vortrag</li>
-                                <li>Projektidee</li>
-                            </ul>
-                        </a>
-                    </li>
-                </ul>
-            </section>
+        <main class="page-main tab-grid" data-tab-navigation-tabs data-tab-navigation-id="main" data-tab-navigation-selected-tab-name="section-main">
+            <div id="section-main">
+                <form class="page-search">
+                    <input type="search" placeholder="Suche">
+                    <button type="submit"><span class="icon icon-l">search</span></button>
+                </form>
+                <dialog open class="project-presentation-dialog">
+                    <form method="dialog"><button>x</button></form>
+                    <h2>Willkommen!</h2>
+                    <p>In der Bearbeitung von Projekten ist es von entscheidener Bedeutung, nicht nur theoretisches Wissen zu besitzen, sondern auch praxiserprobte Methoden, bewährte Tricks und den souveränen Umgang mit möglichen Stolpersteinen zu beherrschen. Hier setzt ProjectSurvival4All an, eine innovative Plattform in Zusammenarbeit mit der TH Köln, die entwickelt wurde, um dich und dein Team bei Projektarbeiten und im Studium optimal zu unterstützen. Hier erwarten dich erstklassige Inhalte von erfahrenen Dozenten, die dir Best Practices und kuratiertes Wissen auf eine interessante und effiziente Weise vermitteln. Schau einfach mal vorbei und entdecke, wie ProjectSurvival4All deine Projekterfahrung auf das nächste Level heben kann.</p>
+                    <a href="/pages/about/about-the-project.html">Alle Infos über das Projekt</a>
+                </dialog>
+                <section class="favorites-section link-tile-section">
+                    <h2>Favoriten</h2>
+                    <ul>
+                        <li class="article-tile">
+                            <a href="">
+                                <div class="link-tile-content">
+                                    <h3>Wie baue ich eine Präsentation auf?</h3>
+                                    <address>Monika Engelen</address>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="video-tile">
+                            <a href="">
+                                <div class="link-tile-content">
+                                    <h3>Wie erstelle ich eine Agenda?</h3>
+                                    <address>Raphaela Groten</address>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="video-tile">
+                            <a href="">
+                                <div class="link-tile-content">
+                                    <h3>Wie priorisiere ich (einen Backlog)?</h3>
+                                    <address>Raphaela Groten</address>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="article-tile">
+                            <a href="">
+                                <div class="link-tile-content">
+                                    <h3>Wie halte ich einen Pitch?</h3>
+                                    <address>Monika Engelen</address>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="video-tile">
+                            <a href="">
+                                <div class="link-tile-content">
+                                    <h3>Wie baue ich eine Präsentation auf?</h3>
+                                    <address>Monika Engelen</address>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+                <section class="ilu-folders-section link-tile-section">
+                    <h2>Von deinem ILU Schreibtisch</h2>
+                    <ul>
+                        <li>
+                            <a href="">
+                                <div class="link-tile-content">
+                                    <span class="link-tile-title">Datenbanken 1</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="link-tile-content">
+                                    <span class="link-tile-title">Kommunikationstechnik und Netze</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="link-tile-content">
+                                    <span class="link-tile-title">Paradigmen der Programmierung</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="link-tile-content">
+                                    <span class="link-tile-title">Audiovisuelles Medienprojekt</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="link-tile-content">
+                                    <span class="link-tile-title">Grundlagen des Web</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="link-tile-content">
+                                    <span class="link-tile-title">Screendesign</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="link-tile-content">
+                                    <span class="link-tile-title">Datenbanken 1</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+                <section class="is-hidden">
+                    <h2>Verlauf</h2>
+                    <ul>
+                        <li>
+                            <a href="">
+                                <img src="/images/rednerin-praesentation.jpg" alt="Professorin Monika Engelen hält einen Vortrag vor Publikum">
+                                <h3>Wie halte ich einen Pitch?</h3>
+                                <address>Monika Engelen</address>
+                                <ul>
+                                    <li>Pitch</li>
+                                    <li>Startup</li>
+                                    <li>Überzeugen</li>
+                                    <li>Visualisieren</li>
+                                    <li>Vortrag</li>
+                                    <li>Projektidee</li>
+                                </ul>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img class="TODO" src="/assets/images/placeholder.png" alt="Placeholder Image">
+                                <h3>Wie halte ich einen Pitch? 2</h3>
+                                <address>Monika Engelen</address>
+                                <ul>
+                                    <li>Pitch</li>
+                                    <li>Startup</li>
+                                    <li>Überzeugen</li>
+                                    <li>Visualisieren</li>
+                                    <li>Vortrag</li>
+                                    <li>Projektidee</li>
+                                </ul>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="/images/th-koln-header.jpg" alt="Das TH Köln Logo ist auf einem Schild zu sehen, im Hintergrund geht eine Studierende auf dem Campus Gelände">
+                                <h3>Wie arbeite ich im Team?</h3>
+                                <address>Monika Engelen</address>
+                                <ul>
+                                    <li>Pitch</li>
+                                    <li>Startup</li>
+                                    <li>Überzeugen</li>
+                                    <li>Visualisieren</li>
+                                    <li>Vortrag</li>
+                                </ul>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img class="TODO" src="/assets/images/placeholder.png" alt="Placeholder Image">
+                                <h3>Wie arbeite ich im Team?</h3>
+                                <address>Monika Engelen</address>
+                                <ul>
+                                    <li>Pitch</li>
+                                    <li>Startup</li>
+                                    <li>Überzeugen</li>
+                                    <li>Visualisieren</li>
+                                    <li>Vortrag</li>
+                                </ul>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="/images/th-koln-header.jpg" alt="Das TH Köln Logo ist auf einem Schild zu sehen, im Hintergrund geht eine Studierende auf dem Campus Gelände">
+                                <h3>Wie arbeite ich im Team?</h3>
+                                <address>Monika Engelen</address>
+                                <ul>
+                                    <li>Pitch</li>
+                                    <li>Startup</li>
+                                    <li>Überzeugen</li>
+                                    <li>Visualisieren</li>
+                                    <li>Vortrag</li>
+                                </ul>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="/images/rednerin-praesentation.jpg" alt="Professorin Monika Engelen hält einen Vortrag vor Publikum">
+                                <h3>Wie halte ich einen Pitch?</h3>
+                                <address>Monika Engelen</address>
+                                <ul>
+                                    <li>Pitch</li>
+                                    <li>Startup</li>
+                                    <li>Überzeugen</li>
+                                    <li>Visualisieren</li>
+                                    <li>Vortrag</li>
+                                    <li>Projektidee</li>
+                                </ul>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+            <div id="section-suche">
+                <p>Suche</p>
+            </div>
+            <div id="section-aktuelles">
+                <p>Aktuelles</p>
+            </div>
         </main>
-        <footer class="page-footer is-hidden">
-            <nav>
+        <footer class="page-footer">
+            <nav class="page-footer-navigation">
                 <div>
                     <h2>Barrierefreiheit</h2>
                     <ul>
@@ -267,5 +287,6 @@
                 </div>
             </nav>
         </footer>
+        <script src="assets/scripts/main.js"></script>
     </body>
 </html>
