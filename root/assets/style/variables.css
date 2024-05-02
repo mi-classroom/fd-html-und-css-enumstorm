@@ -34,7 +34,7 @@
     --layer-sidebar: 20;
 
     /* Shadow */
-    --sidebar-shadow: 1px 0 8px hsl(0deg 0% 40%);
+    --sidebar-shadow: 1px 0 8px hsl(0deg 0% 0% / 40%);
 
     /* Other */
     --size-selected-element-outline-width: 2px;
