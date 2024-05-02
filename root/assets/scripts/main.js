@@ -8,7 +8,7 @@ mainMenuOpenButton.addEventListener(
 
 function toggleMainMenu() {
     document.querySelector('[data-js-page-main-navigation]').classList.toggle('is-open');
-    document.querySelector('[data-js-main-menu-open-button]Ä').classList.toggle('is-open');
+    document.querySelector('[data-js-main-menu-open-button]').classList.toggle('is-open');
 }
 
 
