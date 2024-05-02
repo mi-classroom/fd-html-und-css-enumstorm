@@ -1,18 +1,3 @@
-.link-tile-list > li {
-    margin-bottom: var(--size-m);
-    background-color: var(--color-th-koeln-weiss);
-
-    a {
-        display: block;
-    }
-
-    .icon {
-        
-    }
-}
-
-
-
 .project-presentation-dialog {
     position: relative;
     padding: var(--size-l);
@@ -20,6 +5,7 @@
     margin: var(--size-s) var(--size-xl);
     background-color: var(--color-th-koeln-orange);
     color: var(--color-th-koeln-weiss);
+    line-height: var(--line-height-loose);
     
 
     h2 {
@@ -39,36 +25,98 @@
         float: right;
         font-size: var(--size-l);
         font-weight: var(--font-weight-bold);
-    }
+        transition: background-color 0.25s ease-out;
 
-    button:hover {
-        background-color: var(--color-orange-light);
+        &:hover {
+            background-color: var(--color-button-orange-active);
+        }
+
+        &:active {
+            background-color: var(--color-orange-light);
+        }
     }
 }
-
 
 .link-tile-section {
     padding: var(--size-s) var(--size-xl);
 
     h2 {
         margin-bottom: var(--size-xl);
-        font-size: var(--size-l);
+        font-size: var(--size-xl);
         font-weight: var(--font-weight-semi-bold);
+    }
+
+    li {
+        margin-bottom: var(--size-m);
+        background-color: var(--color-th-koeln-weiss);
+    }
+    
+    a {
+        display: block;
+        padding: var(--size-s);
+    }
+
+    .link-tile-content {
+        display: flex;
+        align-items: center;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    .link-tile-content::before {
+        position: relative;
+        font-family: var(--icons);
+        font-size: var(--size-xxxl);
+
+        /* margin-right: var(--size-s); */
     }
 
     h3, .link-tile-title {
         font-size: var(--size-l);
         font-weight: var(--font-weight-regular);
     }
+}
 
+.favorites-section {
     address {
         font-size: var(--size-s);
         font-weight: var(--font-weight-regular);
     }
+    
+    .article-tile .link-tile-content::before {
+        content: "description";
+    }
+    
+    .video-tile .link-tile-content::before {
+        content: "tv";
+    }
+}
+
+.ilu-folders-section {
+    .link-tile-content::before {
+        content: "folder";
+    }
+
+    .link-tile-title {
+        display: inline-block;
+    }
+}
+
+.tab-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    > div {
+        display: none;
+
+        &.is-active {
+            display: block;
+        }
+    }
 }
 
 
-@media only screen and (orientation: portrait) {    
+@media only screen and (width < 45rem) {    
     main .page-search {
         display: flex;
     }
