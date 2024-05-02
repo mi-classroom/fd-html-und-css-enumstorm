@@ -58,13 +58,19 @@
 
     .link-tile-content {
         display: flex;
-        align-items: center;
+        align-items: stretch;
         white-space: nowrap;
         overflow: hidden;
+        flex-direction: row;
+        gap: var(--size-m);
+    }
+
+    .link-tile-text-container {
+        background-color: green;
+        width: 100%;
     }
 
     .link-tile-content::before {
-        position: relative;
         font-family: var(--icons);
         font-size: var(--size-xxxl);
 
@@ -97,8 +103,8 @@
         content: "folder";
     }
 
-    .link-tile-title {
-        display: inline-block;
+    .link-tile-text-container {
+        align-content: center;
     }
 }
 
