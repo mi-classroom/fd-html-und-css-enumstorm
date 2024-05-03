@@ -45,6 +45,4 @@ function renderArticles(articles) {
         const articleHtml = createArticleHtml(article);
         articleListDomElement.appendChild(articleHtml);
     });
-
-    return articlesHtml;
 }
