@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    background-color: var(--color-background);
+    font-family: "source-sans-3", Arial, sans-serif;
+    font-size: var(--size-m);
+    font-weight: var(--font-weight-regular);
+    min-width: 22rem;
+}
+
+dialog {
+    background-color: var(--color-background);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: var(--font-weight-bold);
+}
+
+h1 {
+    font-size: var(--size-xl);
+}
+
+h2 {
+    font-size: var(--size-l);
+}
+
+h3 {
+    font-size: var(--size-m);
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}

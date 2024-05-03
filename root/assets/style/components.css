@@ -1,0 +1,215 @@
+.project-presentation-dialog {
+    position: relative;
+    padding: var(--size-l);
+    border-style: none;
+    margin: var(--size-s) var(--size-xl);
+    background-color: var(--color-th-koeln-orange);
+    color: var(--color-th-koeln-weiss);
+    line-height: var(--line-height-loose);
+    
+
+    h2 {
+        font-size: var(--size-xl);
+    }
+
+    p {
+        font-size: var(--size-m);
+    }
+
+
+    button {
+        border-style: none;
+        background-color: transparent;
+        color: var(--color-th-koeln-weiss);
+        cursor: pointer;
+        float: right;
+        font-size: var(--size-l);
+        font-weight: var(--font-weight-bold);
+        transition: background-color 0.25s ease-out;
+
+        &:hover {
+            background-color: var(--color-button-orange-active);
+        }
+
+        &:active {
+            background-color: var(--color-orange-light);
+        }
+    }
+}
+
+.article-tags {
+    display: flex;
+    flex-direction: row;
+    gap: var(--size-s);
+
+    > li {
+        padding: var(--size-xxxs) var(--size-s);
+        font-size: var(--size-m);
+        font-weight: var(--font-weight-regular);
+        background-color: var(--color-article-text-background);
+    }
+}
+
+.link-tile-section {
+    padding: var(--size-s) var(--size-xl);
+
+    h2 {
+        margin-bottom: var(--size-xl);
+        font-size: var(--size-xl);
+        font-weight: var(--font-weight-semi-bold);
+    }
+
+    > ul {
+        display: flex;
+        flex-flow: row wrap;
+        gap: var(--m);
+    }
+
+    > ul > li {
+        margin-bottom: var(--size-m);
+        background-color: var(--color-th-koeln-weiss);
+        width: 30rem;
+    }
+    
+    a {
+        display: block;
+        padding: var(--size-s);
+    }
+
+    .link-tile-content {
+        display: flex;
+        align-items: stretch;
+        white-space: nowrap;
+        overflow: hidden;
+        flex-direction: row;
+        gap: var(--size-s);
+    }
+
+    .link-tile-text-container {
+        width: 100%;
+    }
+
+    .link-tile-content::before {
+        font-family: var(--icons);
+        font-size: var(--size-xxxl);
+    }
+
+    h3, .link-tile-title {
+        font-size: var(--size-l);
+        font-weight: var(--font-weight-regular);
+    }
+}
+
+.favorites-section {
+    .link-tile-text-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    address {
+        font-size: var(--size-s);
+        font-weight: var(--font-weight-regular);
+    }
+    
+    .article-tile .link-tile-content::before {
+        content: "description";
+    }
+    
+    .video-tile .link-tile-content::before {
+        content: "tv";
+    }
+}
+
+.ilu-folders-section {
+    .link-tile-content::before {
+        content: "folder";
+    }
+
+    .link-tile-text-container {
+        align-content: center;
+    }
+}
+
+.article-section {
+    padding: var(--size-s) var(--size-xl);
+
+    h2 {
+        margin-bottom: var(--size-xl);
+        font-size: var(--size-xl);
+        font-weight: var(--font-weight-semi-bold);
+    }
+
+    > ul {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .article-tile-list > li {
+        outline: 3px solid purple;
+        background-color: var(--color-th-koeln-weiss);
+        height: 10rem;
+    }
+
+    img {
+        display: none;
+    }
+
+    h3 {
+        font-size: var(--size-l);
+        font-weight: var(--font-weight-bold);
+    }
+
+    address {
+        font-size: var(--size-m);
+        font-weight: var(--font-weight-regular);
+    }
+}
+
+.filter-section {
+    padding: var(--size-s) var(--size-xl);
+
+    h2 {
+        margin-bottom: var(--size-xl);
+        font-size: var(--size-xl);
+        font-weight: var(--font-weight-bold);
+    }
+
+    h3 {
+        margin-bottom: var(--size-xl);
+        font-size: var(--size-l);
+        font-weight: var(--font-weight-bold);
+    }
+}
+
+.tab-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    > div {
+        display: none;
+
+        &.is-active {
+            display: block;
+        }
+    }
+}
+
+
+@media only screen and (width < 45rem) {    
+    main .page-search {
+        display: flex;
+    }
+}
+
+/* @media only screen and (width >= 45rem) {
+    .article-section > ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (width >= 60rem) {
+    .article-section > ul {
+        grid-template-columns: repeat(3, 1fr);
+    }
+} */

@@ -1,0 +1,9 @@
+.is-hidden {
+    display: none !important;
+}
+
+.is-bordered {
+    border-width: 3px;
+    border-style: solid;
+    border-color: red;
+}
