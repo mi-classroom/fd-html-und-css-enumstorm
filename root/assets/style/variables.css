@@ -22,6 +22,7 @@
     --size-xl: calc(var(--base-font-size) * 1.5);
     --size-xxl: calc(var(--base-font-size) * 2);
     --size-xxxl: calc(var(--base-font-size) * 2.5);
+    --size-eighth: calc(var(--size-m) / 8);
     --size-quat: calc(var(--size-m) / 4);
     --size-half: calc(var(--size-m) / 2);
     --size-third-screen-width: 33vw;
