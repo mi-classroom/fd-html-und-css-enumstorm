@@ -1,0 +1,118 @@
+/* compositions
+############################################################################ */
+
+.horizontal-flow {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--size-xs);
+  }
+  
+  /* utlities
+  ############################################################################ */
+  
+  .p-m {
+      padding: var(--size-m);
+  }
+  
+  /* filter section
+  ############################################################################ */
+  
+  .filter-section {
+    background-color: var(--color-th-koeln-weiss);
+    margin: var(--size-m);
+  
+    /* align bottom right */
+    .filter-section-actionbar {
+      display: flex;
+      gap: var(--size-xs);
+      padding-top: var(--size-m);
+      justify-content: flex-end; 
+    }
+  
+    h2 {
+      margin-bottom: 0;
+    }
+  
+    h3 {
+      margin-bottom: var(--size-quat);
+    }
+  }
+  
+  /* buttons
+  ############################################################################ */
+  
+  .button {
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.6s;
+    padding: var(--size-half) var(--size-m);
+  
+    &[data-state="active"] {
+      font-weight: var(--font-weight-bold);
+    }
+  }
+  
+  .button-primary {
+    background-color: #E8E8E8;
+  
+    &:hover {
+      background-color: #D8D8D8;
+    }
+  }
+  
+  .button-secondary {
+    color: var(--color-white);
+    background-color: var(--color-th-koeln-violett);
+  
+    &:hover {
+      background-color: #dd639a;
+    }
+  }
+  
+  
+  /* card grid
+  ############################################################################ */
+  
+  .card-grid{
+    display: grid;
+    gap: var(--size-m);
+    grid-auto-rows: 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(calc(300px * 1.5), 1fr));
+  
+    li{
+      margin-bottom: var(--size-quat);
+  
+      img{
+        width: 100%;
+        aspect-ratio: 16/9;
+        object-fit: cover;
+      }
+  
+      figcaption{
+        padding: var(--size-s);
+      }
+  
+      h3{
+        padding: 0;
+        margin: 0;
+        font-weight: var(--font-weight-bold);
+      }
+  
+      address{
+        margin-bottom: var(--size-s);
+      }
+    }
+  }
+  
+  /* Tag List
+  ############################################################################ */
+  
+  .tag-list{
+    li{
+      display: inline-block;
+      padding: var(--size-eighth) var(--size-half);
+      margin-bottom: 0;
+      background-color: #E8E8E8;
+      font-size: var(--size-s);
+    }
+  }
